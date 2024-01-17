@@ -111,7 +111,7 @@ func main() {
 	}
 
 	fmt.Println("Server is running on http://localhost:8080")
-	err := r.Run()
+	err := r.Run(":8080")
 	if err != nil {
 		fmt.Println("Error starting the server:", err)
 	}
